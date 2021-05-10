@@ -1,8 +1,8 @@
 class SalesController < ApplicationController
-    # def index
-    #     reviews = Review.all 
-    #     render json: reviews
-    # end
+    def index
+        sales = Sale.all 
+        render json: sales
+    end
 
     # def show
     #     review = Review.find(params[:id])

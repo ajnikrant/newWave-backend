@@ -60,3 +60,4 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 gem 'activerecord-reset-pk-sequence'
 
 gem 'rack-cors', :require => 'rack/cors'
+gem "active_model_serializers", "~> 0.10.12"
