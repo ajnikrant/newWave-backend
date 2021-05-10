@@ -21,7 +21,7 @@ end
 puts "seeded users"
 
 10.times do
-    Listing.create!(title: Faker::Music.instrument, location: Faker::Games::Pokemon.location, price: Faker::Number.within(range: 1..1000), description: Faker::Movies::StarWars.quote, barter: Faker::Boolean.boolean, for_sale: Faker::Boolean.boolean, category: Faker::Music.genre, user_id: User.all.sample.id)
+    Listing.create!(image:"https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517", title: Faker::Music.instrument, location: Faker::Games::Pokemon.location, price: Faker::Number.within(range: 1..1000), description: Faker::Movies::StarWars.quote, barter: Faker::Boolean.boolean, for_sale: Faker::Boolean.boolean, category: Faker::Music.genre, user_id: User.all.sample.id)
 end
 puts "seeded listings"
 
