@@ -24,60 +24,60 @@ puts "seeded users"
 # 10.times do
 #     Listing.create!(image:"https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517", title: Faker::Music.instrument, location: Faker::Games::Pokemon.location, price: Faker::Number.within(range: 1..1000), description: Faker::Movies::StarWars.quote, barter: Faker::Boolean.boolean, for_sale: Faker::Boolean.boolean, category: Faker::Music.genre, user_id: User.all.sample.id)
 # end
-{
+Listing.create!{
 "price": 716,
-"title": "Flute",
-"description": "Only now, at the end, do you understand…",
-"user_id": 19,
-"category": "Non Music",
+"title": "Irish Flute",
+"description": "Simple, solid design, PVC wood-replica, Ideal for playing traditional Irish music.",
+"user_id": User.all.sample.id,
+"category": "woodwinds",
 "barter": true,
-"for_sale": false,
-"barter_description": null,
-"image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
+"for_sale": true,
+"barter_description": "crystal flute, maracas",
+"image": "https://thumbs.static-thomann.de/thumb/orig/pics/bdb/230182/10094790_800.jpg",
 "location": "Lentimas Town"
 },
-{
+Listing.create!{
 "price": 62,
-"title": "Electric Guitar",
+"title": "Glarry GST Maple Fingerboard Electric Guitar",
 "description": "I'm backwards, you filthy furball!",
-"user_id": 20,
-"category": "World",
+"user_id": User.all.sample.id,
+"category": "strings",
 "barter": false,
 "for_sale": true,
 "barter_description": null,
-"image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
+"image": "https://www.glarrymusic.com/thumb_image/product/1/1700/17002949/17002949_1_520_520.jpg?20190329043104",
 "location": "Petalburg City"
 },
-{
+Listing.create!{
 "price": 858,
 "title": "Harp",
 "description": "The Republic doesn't exist out here. We must survive on our own.",
-"user_id": 13,
-"category": "Pop",
+"user_id": User.all.sample.id,
+"category": "strings",
 "barter": false,
 "for_sale": true,
 "barter_description": null,
 "image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
 "location": "Cyllage City"
 },
-{
+Listing.create!{
 "price": 341,
 "title": "Ukelele",
 "description": "War is in your blood. I studied the art of war, worked to perfect it, but you? You were forged by it.",
-"user_id": 19,
-"category": "Jazz",
+"user_id": User.all.sample.id,
+"category": "strings",
 "barter": true,
 "for_sale": false,
 "barter_description": null,
 "image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
 "location": "Accumula Town"
 },
-{
+Listing.create!{
 "price": 128,
 "title": "Saxophone",
 "description": "We have no choice, General Calrissian! Our cruisers can't repel firepower of that magnitude!",
-"user_id": 12,
-"category": "Classical",
+"user_id": User.all.sample.id,
+"category": "woodwinds",
 "barter": false,
 "for_sale": true,
 "barter_description": null,
