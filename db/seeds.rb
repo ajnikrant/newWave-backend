@@ -82,67 +82,65 @@ puts "seeded users"
 "barter_description": null,
 "image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
 "location": "Pacifidlog Town"
-},
-{
-"price": 810,
-"title": "Ukelele",
-"description": "We have no choice, General Calrissian! Our cruisers can't repel firepower of that magnitude!",
-"user_id": 19,
-"category": "Soul",
-"barter": false,
-"for_sale": true,
-"barter_description": null,
-"image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
-"location": "Camphrier Town"
-},
-{
-"price": 603,
-"title": "Harp",
-"description": "I assume you need something. Desperately.",
-"user_id": 12,
-"category": "Reggae",
-"barter": true,
-"for_sale": true,
-"barter_description": null,
-"image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
-"location": "Driftveil City"
-},
-{
-"price": 88,
-"title": "Acoustic Guitar",
-"description": "Sorry to interrupt your playtime, Grumpy, but wouldn't you prefer a challenge?",
-"user_id": 11,
-"category": "World",
-"barter": false,
-"for_sale": true,
-"barter_description": null,
-"image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
-"location": "Six Island"
-},
-{
-"price": 241,
-"title": "Bass Guitar",
-"description": "Careful, Ren, that your personal interests not interfere with orders from Leader Snoke.",
-"user_id": 17,
-"category": "Jazz",
-"barter": false,
-"for_sale": false,
-"barter_description": null,
-"image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
-"location": "Eterna City"
-},
-{
-"price": 522,
-"title": "Oboe",
-"description": "Careful, Ren, that your personal interests not interfere with orders from Leader Snoke.",
-"user_id": 14,
-"category": "Non Music",
-"barter": false,
-"for_sale": true,
-"barter_description": null,
-"image": "https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517",
-"location": "Castelia City"
 }
+
+
+    
+   Listing.create( price: 810,
+    title: "Ukelele",
+    description: "We have no choice, General Calrissian! Our cruisers can't repel firepower of that magnitude!",
+    user_id: User.all.sample.id,
+    category: "Strings",
+    barter: false,
+    for_sale: true,
+    barter_description: null,
+    image: "https://cdn.shopify.com/s/files/1/1140/3964/products/GG133_Ukelele_Action_9710_700x700.jpg?v=1586948980",
+    location: "Camphrier Town")
+    
+    
+    Listing.create(price: 603,
+    title: "Harp",
+    description: "I assume you need something. Desperately.",
+    user_id: User.all.sample.id,
+    category: "Strings",
+    barter: true,
+    for_sale: true,
+    barter_description: null,
+    image: "https://manufacturing.dustystrings.com/application/files/9315/0828/4774/FH36S-sapele.jpg",
+    location: "Driftveil City")
+    
+    Listing.create(price: 88,
+    title: "Acoustic Guitar",
+    description: "Sorry to interrupt your playtime, Grumpy, but wouldn't you prefer a challenge?",
+    user_id: User.all.sample.id,
+    category: "Strings",
+    barter: false,
+    for_sale: true,
+    barter_description: null,
+    image: "https://atkinguitars.com/wp-content/uploads/2020/10/2d7887d1-7774-4ddf-adcb-394f84a30f39-e1603286309609.jpg",
+    location: "Six Island")
+
+    Listing.create(price: 241,
+    title: "Bass Guitar",
+    description: "Careful, Ren, that your personal interests not interfere with orders from Leader Snoke.",
+    user_id: User.all.sample.id,
+    category: "Strings",
+    barter: false,
+    for_sale: false,
+    barter_description: null,
+    image: "https://lh3.googleusercontent.com/proxy/1axF6CBcaQ54GVvLuj9TmQLWGdJmrEN1VONCqhb37kcnLZLpNJH3olfW1x3Rg7-cFOudIY4itIktVtBnIxBv4mq9mxLq4cSEGDEDpJ4z-qYaKFUnDzCLFiyRAMf1VTCv",
+    location: "Eterna City")
+
+    Listing.create(price: 522,
+    title: "Oboe",
+    description: "Careful, Ren, that your personal interests not interfere with orders from Leader Snoke.",
+    user_id: User.all.sample.id,
+    category: "Woodwinds",
+    barter: false,
+    for_sale: true,
+    barter_description: null,
+    image: "https://craftsmanship.net/wp-content/uploads/2020/10/Reeds-11-main-story-photos-1-57.jpg",
+    location: "Castelia City")
 puts "seeded listings"
 
 
