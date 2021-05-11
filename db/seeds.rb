@@ -88,7 +88,7 @@ puts "seeded users"
     
    Listing.create( price: 810,
     title: "Ukelele",
-    description: "We have no choice, General Calrissian! Our cruisers can't repel firepower of that magnitude!",
+    description: "No, it is not a tiny guitar. Selling my ukulele, works fine. Price is firm. Comes with a case.",
     user_id: User.all.sample.id,
     category: "Strings",
     barter: false,
@@ -100,7 +100,7 @@ puts "seeded users"
     
     Listing.create(price: 603,
     title: "Harp",
-    description: "I assume you need something. Desperately.",
+    description: "This harp is haunted. Buy it at your own risk. You'll hear it make sounds even if no one is touching it.",
     user_id: User.all.sample.id,
     category: "Strings",
     barter: true,
@@ -111,7 +111,7 @@ puts "seeded users"
     
     Listing.create(price: 88,
     title: "Acoustic Guitar",
-    description: "Sorry to interrupt your playtime, Grumpy, but wouldn't you prefer a challenge?",
+    description: "Stunning fender electric acoustic. Comes with autotuner, a handful of picks, and a strap.",
     user_id: User.all.sample.id,
     category: "Strings",
     barter: false,
@@ -122,7 +122,7 @@ puts "seeded users"
 
     Listing.create(price: 241,
     title: "Bass Guitar",
-    description: "Careful, Ren, that your personal interests not interfere with orders from Leader Snoke.",
+    description: "Selling this bass. Yes, it'll make you sound like the intro to Seinfeld. Sounds awesome, in great shape!",
     user_id: User.all.sample.id,
     category: "Strings",
     barter: false,
@@ -133,7 +133,7 @@ puts "seeded users"
 
     Listing.create(price: 522,
     title: "Oboe",
-    description: "Careful, Ren, that your personal interests not interfere with orders from Leader Snoke.",
+    description: "Call it a clarinet one more time, I dare you.",
     user_id: User.all.sample.id,
     category: "Woodwinds",
     barter: false,
