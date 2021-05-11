@@ -6,13 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Listing.destroy_all 
+Sale.destroy_all
+User.destroy_all
+
 Listing.reset_pk_sequence
 Sale.reset_pk_sequence
 User.reset_pk_sequence
 
-Listing.destroy_all 
-Sale.destroy_all
-User.destroy_all
+
 
 
 10.times do
