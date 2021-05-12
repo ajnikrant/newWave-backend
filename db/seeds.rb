@@ -22,9 +22,6 @@ User.reset_pk_sequence
 end 
 puts "seeded users"
 
-# 10.times do
-#     Listing.create!(image:"https://media.istockphoto.com/photos/single-recorder-musical-instrument-of-wood-isolated-on-white-picture-id532468517", title: Faker::Music.instrument, location: Faker::Games::Pokemon.location, price: Faker::Number.within(range: 1..1000), description: Faker::Movies::StarWars.quote, barter: Faker::Boolean.boolean, for_sale: Faker::Boolean.boolean, category: Faker::Music.genre, user_id: User.all.sample.id)
-# end
 Listing.create!(
 price: 716,
 title: "Irish Flute",
@@ -58,7 +55,7 @@ category: "strings",
 barter: false,
 for_sale: true,
 barter_description: "",
-image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSlxiFEiPA2gd92tC8AUxJkR_6xFVwgrjavbIRM1D1zeX7YuReOtm1IahEj-QncMPoy1QB8ECzmCPB8utY8UC94IDSkkcIAxIWNuD_4Hc-ajmNN3qpXmSxfGA&usqp=CAE",
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVZRVHabMRe7m7t64iCA1Mbzry2IaC17MmA&usqp=CAU",
 location: "Cyllage City"
 )
 Listing.create!(
@@ -107,7 +104,7 @@ location: "Pacifidlog Town"
     category: "strings",
     barter: true,
     for_sale: true,
-    barter_description: "",
+    barter_description: "Cello, Grand Piano",
     image: "https://manufacturing.dustystrings.com/application/files/9315/0828/4774/FH36S-sapele.jpg",
     location: "Driftveil City")
     
@@ -130,7 +127,7 @@ location: "Pacifidlog Town"
     barter: false,
     for_sale: false,
     barter_description: "",
-    image: "https://lh3.googleusercontent.com/proxy/1axF6CBcaQ54GVvLuj9TmQLWGdJmrEN1VONCqhb37kcnLZLpNJH3olfW1x3Rg7-cFOudIY4itIktVtBnIxBv4mq9mxLq4cSEGDEDpJ4z-qYaKFUnDzCLFiyRAMf1VTCv",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbPXXxXnaLLrYfeDbHJq9FTKFczZ4IICnN7w&usqp=CAU",
     location: "Eterna City")
 
     Listing.create(price: 522,
@@ -143,6 +140,93 @@ location: "Pacifidlog Town"
     barter_description: "",
     image: "https://craftsmanship.net/wp-content/uploads/2020/10/Reeds-11-main-story-photos-1-57.jpg",
     location: "Castelia City")
+
+# --------------new seeds!---------------
+    Listing.create!(
+price: 10,
+title: "Traingle",
+description: "Would not consider this as a concert worthy instrument. Good quality especially for the price. Makes you feel like you're working on a farm, calling everyone in for supper",
+user_id: User.all.sample.id,
+category: "percussion",
+barter: true,
+for_sale: true,
+barter_description: "Drums, Amp Cables",
+image: "https://i.etsystatic.com/27535008/d/il/45bc4a/2882951757/il_340x270.2882951757_t8ov.jpg?version=0",
+location: "Sesame Towers"
+)
+Listing.create!(
+price: Faker::Number.within(range: 1..1000),
+title: "Electric Keyboard",
+description: "Capture the sounds of your favorite instruments in one convenient place with an electronic keyboard",
+user_id: User.all.sample.id,
+category: "piano/keyboard",
+barter: true,
+for_sale: true,
+barter_description: "Standard Piano, Synth",
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhrHmPD7_KRmASjxdtAHAeJKjJNpGBFxLDJQ&usqp=CAU",
+location: Faker::Games::Pokemon.location
+)
+Listing.create!(
+price: Faker::Number.within(range: 1..1000),
+title: "Drum Set",
+description: "New: A brand-new, unused, unopened, undamaged item in its original packaging.",
+user_id: User.all.sample.id,
+category: "percussion",
+barter: false,
+for_sale: true,
+barter_description: "",
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRduYL0DcurVYUUDxzxSfFqmF-moyju3PEUqQ&usqp=CAU",
+location: Faker::Games::Pokemon.location
+)
+Listing.create!(
+price: Faker::Number.within(range: 1..1000),
+title: "Steel Drum",
+description: "Great for home recreational music making both kids and adults – can be played with other instruments, poolside jamming, classroom music education (K-8), music therapy, worship music etc",
+user_id: User.all.sample.id,
+category: "percussion",
+barter: false,
+for_sale: true,
+barter_description: "",
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfmZv6djBuNTo7lLMlHkFsavcVjgwCRns2w&usqp=CAU",
+location: Faker::Games::Pokemon.location
+)
+Listing.create!(
+price: Faker::Number.within(range: 1..1000),
+title: "Kalimba",
+description: "This instrument is also known as a finger harp. Sounds like a dream, it just hurts my thumbs so it needs to go.",
+user_id: User.all.sample.id,
+category: "piano/keyboard",
+barter: true,
+for_sale: false,
+barter_description: "Guitar, Xylophone, Triangle",
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrWDsBLcYUDw6Z1xTcqipiZUr0W0_aGQ4UWvhS5gj-0IqVnDhjIR30O-d-7g&usqp=CAc",
+location: Faker::Games::Pokemon.location
+)
+Listing.create!(
+price: Faker::Number.within(range: 1..1000),
+title: "Trumpet",
+description: "This won't make you sound like Louis Armstrong, but it will definitely get you to Dizzy Gillespie. It's great! ",
+user_id: User.all.sample.id,
+category: "brass",
+barter: false,
+for_sale: true,
+barter_description: "",
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU36ZU3bOn4b0wqCr4bSUAnYu5-v90sqsBtQ&usqp=CAU",
+location: Faker::Games::Pokemon.location
+)
+Listing.create!(
+price: Faker::Number.within(range: 1..1000),
+title: "Maracas",
+description: "You can shake it and it gives out clear and pleasant sound. Great gift for children to develop rhythm sense and coordination ability.",
+user_id: User.all.sample.id,
+category: "percussion",
+barter: true,
+for_sale: true,
+barter_description: "Cymbols, Piano",
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfyJZOwK_SWsRaocJCdoQFbZnx6dFGoyh4vA&usqp=CAU",
+location: Faker::Games::Pokemon.location
+)
+
 puts "seeded listings"
 
 
