@@ -233,6 +233,11 @@ puts "seeded listings"
 10.times do
     Sale.create!(user_id: User.all.sample.id, listing_id: Listing.all.sample.id, price: Faker::Number.within(range: 1..1000))
 end
+
+Sale.create!(user_id: 2, listing_id: Listing.all.sample.id, price: Faker::Number.within(range: 1..1000))
+Sale.create!(user_id: 2, listing_id: Listing.all.sample.id, price: Faker::Number.within(range: 1..1000))
+Sale.create!(user_id: 2, listing_id: Listing.all.sample.id, price: Faker::Number.within(range: 1..1000))
+
 puts "seeded sales"
 
 
